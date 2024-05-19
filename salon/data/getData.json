@@ -6,6 +6,12 @@
         "address": "Słoneczna 11, Warszawa",
         "rating": 4.7
       }
+    ],
+    "treatments": [
+      {
+        "bodypart": "nails"
+      }
     ]
   }
 }
+
