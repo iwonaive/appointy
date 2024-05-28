@@ -5,23 +5,24 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TitleComponent } from './components/title/title.component';
 import { DataService } from './services/data.service';
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, TitleComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, TitleComponent, HttpClient],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
   title = 'appointy';
 
-  constructor(private dataService: DataService, httpService: HttpService) {}
+  constructor(private dataService: DataService, private http: HttpClient) {}
   
   data$!: Observable<Data>;
 
-ngOnInit(): void {
-  this.data$ = this.httpService.getData();
+ngOnInit() {
+  this.data$ = this.http.getData();
 }
 }
 
