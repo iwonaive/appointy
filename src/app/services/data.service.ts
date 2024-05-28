@@ -1,12 +1,25 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { Charminglook } from '../interfaces/charminglook';
 
 @Injectable({ providedIn: 'root' })
 export class DataService {
+  url = 'getData.json';
   constructor(private http: HttpClient) {}
+  mock: Charminglook = {
+mainData: {
+  name: 'test',
+    address: 'test',
+    rating: 1.0,
+},
+    treatments: { 
+      bodyPart: 'nails'
+    }
+  };
+
+  getData(): Observable<Charminglook> {
+    return of(this.mock);
+  }
 }
 
-getData(): new Observable() {
-  return this.httpClient.get(this.getData)
-}
