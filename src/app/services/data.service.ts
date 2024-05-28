@@ -5,21 +5,24 @@ import { Charminglook } from '../interfaces/charminglook';
 
 @Injectable({ providedIn: 'root' })
 export class DataService {
-  url = 'getData.json';
+  url = './assets/getData.json';
+
   constructor(private http: HttpClient) {}
-  mock: Charminglook = {
-mainData: {
-  name: 'test',
-    address: 'test',
-    rating: 1.0,
-},
-    treatments: { 
-      bodyPart: 'nails'
-    }
-  };
+
+  // mock: Charminglook = {
+  //   mainData: {
+  //     name: 'test',
+  //     address: 'test',
+  //     rating: 1.0,
+  //   },
+  //   treatments: { 
+  //     bodyPart: 'nails'
+  //   }
+  // };
 
   getData(): Observable<Charminglook> {
-    return of(this.mock);
+    // return of(this.mock);
+    return this.http.get<Charminglook>(this.url);
   }
 }
 
