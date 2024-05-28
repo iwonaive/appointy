@@ -1,1 +1,8 @@
+<app-title></app-title>
+
+
 <h1>Here our app is created! :)</h1>
+
+<ng-container *ngIf="data$ | async as data">
+  <moj-komponent [data]="data"></moj-komponent>
+</ng-container>
