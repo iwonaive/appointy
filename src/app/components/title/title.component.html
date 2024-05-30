@@ -1,4 +1,33 @@
-<ng-container *ngIf="note$ | async as note"></ng-container>
+<!-- <ng-container *ngIf="note$ | async as note"></ng-container> -->
+
+{{ title | json }}
 
 <h1>Charming Look</h1>
-<img class="main-img" src="../../../assets/img/main_photo.jpg" alt="photo of nails"/>
+<!-- <img class="main-img" src="../../../assets/img/main_photo.jpg" alt="photo of nails"/> -->
+
+<div class="title">
+  <header>{{ title.mainData.name }}</header>
+  <p>{{ title.mainData.address }}</p>
+  <p>{{ title.mainData.rating }}</p>
+  <!-- <img class="main-img" src="../../../assets/img/main_photo.jpg" alt="photo of nails"/> -->
+</div>
+
+<!-- <article [id]="note.article_link">
+  <header>
+    <h2><a [href]="note.article_link">{{ note.title }}</a></h2>
+  </header>
+  <figure property="image">
+    <img [src]="'assets/notes-images/' + note.img_link" alt="" />
+    <figcaption>{{ note.img_caption }}</figcaption>
+  </figure>
+  <p>
+    <strong><p>{{ note.lead }}</p></strong>
+  </p>
+  <p>
+    <a [href]="note.article_link">Czytaj więcej...</a>
+  </p>
+<<<<<<< Updated upstream
+</article> -->
+=======
+</article> -->
+>>>>>>> Stashed changes
