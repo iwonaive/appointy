@@ -1,5 +1,4 @@
 export interface Charminglook {
-name: any;
   mainData: {
     name: string;
     address: string;

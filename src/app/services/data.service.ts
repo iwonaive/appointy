@@ -16,12 +16,7 @@ export class DataService {
     },
     treatments: {
       bodyPart: 'nails',
-    },
-<<<<<<< Updated upstream
-=======
-    name: 'hello',
-    // nie wiem co odwaliłam, ale jak usunę name to nie działa XD
->>>>>>> Stashed changes
+    }
   };
 
   getData(): Observable<Charminglook> {
