@@ -6,11 +6,12 @@ import { DataService } from './services/data.service';
 import { Observable } from 'rxjs';
 import { Charminglook } from './interfaces/charminglook';
 import { CommonModule } from '@angular/common';
+import { OfferComponent } from './components/offer/offer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, TitleComponent, CommonModule],
+  imports: [HeaderComponent, FooterComponent, TitleComponent, CommonModule, OfferComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
