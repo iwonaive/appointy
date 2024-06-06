@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TitleComponent } from './components/title/title.component';
@@ -7,11 +7,19 @@ import { Observable } from 'rxjs';
 import { Charminglook } from './interfaces/charminglook';
 import { CommonModule } from '@angular/common';
 import { OfferComponent } from './components/offer/offer.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, TitleComponent, CommonModule, OfferComponent],
+  imports: [
+    HeaderComponent,
+    FooterComponent,
+    TitleComponent,
+    CommonModule,
+    OfferComponent,
+    MatSlideToggleModule,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -27,3 +35,10 @@ export class AppComponent implements OnInit {
     this.data$.subscribe((v) => console.log(v));
   }
 }
+
+@NgModule({
+  imports: [MatSlideToggleModule],
+})
+class AppModule {}
+
+// Material działa :)))

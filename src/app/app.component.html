@@ -1,11 +1,14 @@
 <h1>Here our app is created! :)</h1>
 
 <ng-container *ngIf="data$ | async as data">
-  <app-title [title]='data'></app-title>
+  <app-title [title]='data.mainData'></app-title>
+  <!-- <app-offer [offer]=''></app-offer> -->
 </ng-container>
 
 <!-- <ng-container *ngIf="data$ | async as data">
-  <app-offer [offer]='data'></app-offer>
+  
 </ng-container> -->
 
 <!-- Tutaj zagnieżdzam tag?  -->
+
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>

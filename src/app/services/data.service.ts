@@ -16,7 +16,7 @@ export class DataService {
     },
     treatments: {
       bodyPart: 'nails',
-    }
+    },
   };
 
   getData(): Observable<Charminglook> {
