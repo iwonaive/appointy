@@ -2,12 +2,10 @@
 
 <ng-container *ngIf="data$ | async as data">
   <app-title [title]='data.mainData'></app-title>
-  <!-- <app-offer [offer]=''></app-offer> -->
+  <!-- <app-offer [offer]='data.mainData'></app-offer> tak to zagnieżdzam, analogicznie do title? -->
+   <!-- <app-appointments [appointments]="data.mainData"></app-appointments> -->
 </ng-container>
 
-<!-- <ng-container *ngIf="data$ | async as data">
-  
-</ng-container> -->
 
 <!-- Tutaj zagnieżdzam tag?  -->
 

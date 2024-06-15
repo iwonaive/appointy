@@ -8,6 +8,7 @@ import { Charminglook } from './interfaces/charminglook';
 import { CommonModule } from '@angular/common';
 import { OfferComponent } from './components/offer/offer.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { AppointmentsComponent } from './components/appointments/appointments.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     CommonModule,
     OfferComponent,
     MatSlideToggleModule,
+    AppointmentsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -37,7 +39,7 @@ export class AppComponent implements OnInit {
 }
 
 @NgModule({
-  imports: [MatSlideToggleModule],
+  imports: [OfferComponent],
 })
 class AppModule {}
 

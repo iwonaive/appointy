@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-offer',
   imports: [CommonModule],
   templateUrl: './offer.component.html',
+  styleUrls: ['./offer.component.scss'],
 })
 export class OfferComponent {
   @Input() title!: Charminglook;
