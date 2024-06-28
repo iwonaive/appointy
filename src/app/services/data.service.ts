@@ -14,9 +14,9 @@ export class DataService {
       address: 'test',
       rating: 1.0,
     },
-    treatments: {
+    treatments: [{
       bodyPart: 'nails',
-    },
+    }],
   };
 
   getData(): Observable<Charminglook> {

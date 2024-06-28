@@ -1,17 +1,20 @@
 import { Component, Input } from '@angular/core';
-import { Charminglook } from '../../interfaces/charminglook';
+import { Charminglook, Treatments } from '../../interfaces/charminglook';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-appointments',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './appointments.component.html',
   styleUrl: './appointments.component.scss',
 })
 export class AppointmentsComponent {
-  constructor(formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder) {}
   @Input() title!: Charminglook;
+  @Input() appointments!: Treatments;
+
 
   form!: FormGroup;
 
@@ -20,4 +23,6 @@ export class AppointmentsComponent {
       control1: [{ value: 'my val', disabled: true }],
     });
   }
+
+ 
 }

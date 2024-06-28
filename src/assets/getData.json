@@ -4,7 +4,21 @@
     "address": "Słoneczna 11, Warszawa",
     "rating": 4.7
   },
-  "treatments": {
-    "bodypart": "nails"
+  "treatments": [
+    {
+    "bodypart": "nails",
+    "name": "manicure",
+    "inne": "dane"
+  },
+    {
+    "bodypart": "nails",
+    "name": "manicure hybrydowy",
+    "inne": "dane"
+  },
+    {
+    "bodypart": "nails",
+    "name": "manicure żelowy",
+    "inne": "dane"
   }
+]
 }
