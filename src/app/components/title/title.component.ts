@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Charminglook } from '../../interfaces/charminglook';
+import { Address } from '../../interfaces/charminglook';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,7 +7,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-title',
   imports: [CommonModule],
   templateUrl: './title.component.html',
+  styleUrls: ['./title.component.scss'],
 })
 export class TitleComponent {
-  @Input() title!: Charminglook;
+  @Input() title!: Address;
 }

@@ -1,13 +1,21 @@
 export interface Charminglook {
-  mainData: {
+
+  mainData: Address;
+  treatments: Treatments[];
+  }
+
+  export interface Address { 
     name: string;
     address: string;
     rating: number;
-  };
-  treatments: {
-    bodyPart: 'nails' | 'feet' | 'body';
-  };
-}
+  }
+
+  export interface Treatments [
+    {
+    bodyPart: 'string'
+  }
+]
+
 
 // const newSalon: Charminglook = {
 //   mainData: {
