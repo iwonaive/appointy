@@ -11,11 +11,9 @@ import { CommonModule } from '@angular/common';
 })
 export class OfferComponent {
   @Input() title!: Charminglook;
-  @Input() treatments!: Treatments[];
+  @Input() offer!: Treatments[];
 
- trackByFn(index: number) {
+   trackByFn(index: number) {
     console.log(index);
-    return index;
-  }
 }
-
+}

@@ -13,8 +13,7 @@ import { CommonModule } from '@angular/common';
 export class AppointmentsComponent {
   constructor(private formBuilder: FormBuilder) {}
   @Input() title!: Charminglook;
-  @Input() appointments!: Treatments;
-
+  @Input() appointments!: Treatments[];
 
   form!: FormGroup;
 
@@ -23,6 +22,4 @@ export class AppointmentsComponent {
       control1: [{ value: 'my val', disabled: true }],
     });
   }
-
- 
 }

@@ -10,11 +10,9 @@ export interface Charminglook {
     rating: number;
   }
 
-  export interface Treatments [
-    {
-    bodyPart: 'string'
+  export interface Treatments {
+    bodyPart: string
   }
-]
 
 
 // const newSalon: Charminglook = {
