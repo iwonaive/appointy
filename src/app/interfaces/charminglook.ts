@@ -1,7 +1,7 @@
 export interface Charminglook {
 
   mainData: Address;
-  treatments: Treatments[];
+  treatments: Treatment[];
   }
 
   export interface Address { 
@@ -10,13 +10,13 @@ export interface Charminglook {
     rating: number;
   }
 
-  export interface Treatments {
-    bodyPart: string
+  export interface Treatment {
+    price: number;
+    name: string;
+    duration: number;
+    description: string;
+    canBook: boolean; 
   }
 
 
-// const newSalon: Charminglook = {
-//   mainData: {
-//     name: 'CharmingLook',
-//   }
-// }
+

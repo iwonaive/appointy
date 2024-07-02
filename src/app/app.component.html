@@ -1,10 +1,8 @@
-<h1>Here our app is created! :)</h1>
+
 
 <ng-container *ngIf="data$ | async as data">
-  <app-title [title]='data.mainData'></app-title>
-  <app-offer [offer]='data.treatments'></app-offer>
+  <app-title [title]="data.mainData"></app-title>
+  <app-offer [offer]="data.treatments"></app-offer>
   <app-appointments [appointments]="data.treatments"></app-appointments>
 </ng-container>
 
-
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>

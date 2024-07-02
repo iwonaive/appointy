@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Charminglook, Treatments } from '../../interfaces/charminglook';
+import { Charminglook, Treatment } from '../../interfaces/charminglook';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,10 +10,9 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./offer.component.scss'],
 })
 export class OfferComponent {
-  @Input() title!: Charminglook;
-  @Input() offer!: Treatments[];
+  @Input() offer!: Treatment[];
 
    trackByFn(index: number) {
-    console.log(index);
+    return index;
 }
 }

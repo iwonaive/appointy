@@ -7,7 +7,6 @@ import { Observable } from 'rxjs';
 import { Charminglook } from './interfaces/charminglook';
 import { CommonModule } from '@angular/common';
 import { OfferComponent } from './components/offer/offer.component';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AppointmentsComponent } from './components/appointments/appointments.component';
 
 @Component({
@@ -19,7 +18,6 @@ import { AppointmentsComponent } from './components/appointments/appointments.co
     TitleComponent,
     CommonModule,
     OfferComponent,
-    MatSlideToggleModule,
     AppointmentsComponent
   ],
   templateUrl: './app.component.html',
@@ -38,9 +36,9 @@ export class AppComponent implements OnInit {
   }
 }
 
-@NgModule({
-  imports: [OfferComponent],
-})
-class AppModule {}
+// @NgModule({
+//   imports: [OfferComponent],
+// })
+// class AppModule {}
 
 // Material działa :)))

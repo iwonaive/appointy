@@ -1,5 +1,8 @@
 <!-- dropdown  -->
 
-<div *ngFor="let item of offer; trackBy: trackByFn">
-  <span>{{ title | json }}</span>
+<div *ngFor="let item of offer; trackBy: trackByFn" class="pedicure-types">
+  <span>{{ item.name }}</span>
+  <span>{{ item.price }}</span>
+  
 </div>
+

@@ -6,19 +6,25 @@
   },
   "treatments": [
     {
-    "bodypart": "nails",
-    "name": "manicure",
-    "inne": "dane"
-  },
+      "description": "Lorem impsum",
+      "price": 50,
+      "name": "Cosmetic pedicure",
+      "duration": 60,
+      "canBook": true
+    },
     {
-    "bodypart": "nails",
-    "name": "manicure hybrydowy",
-    "inne": "dane"
-  },
+      "description": "Lorem impsum",
+      "price": 45,
+      "name": "Hybrid pedicure",
+      "duration": 60,
+      "canBook": true
+    },
     {
-    "bodypart": "nails",
-    "name": "manicure żelowy",
-    "inne": "dane"
-  }
-]
+      "description": "Lorem impsum",
+      "price": 55,
+      "name": "Biological pedicure",
+      "duration": 60,
+      "canBook": false
+    }
+  ]
 }

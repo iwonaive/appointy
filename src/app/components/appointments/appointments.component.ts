@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Charminglook, Treatments } from '../../interfaces/charminglook';
+import { Charminglook, Treatment } from '../../interfaces/charminglook';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 export class AppointmentsComponent {
   constructor(private formBuilder: FormBuilder) {}
   @Input() title!: Charminglook;
-  @Input() appointments!: Treatments[];
+  @Input() appointments!: Treatment[];
 
   form!: FormGroup;
 
