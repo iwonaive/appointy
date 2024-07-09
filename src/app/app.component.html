@@ -2,9 +2,11 @@
   <app-header></app-header>
   <div class="row-wrapper">
     <app-title [title]="data.mainData"></app-title>
-    <app-offer [offer]="data.treatments"></app-offer>
     <app-appointments [appointments]="data.treatments"></app-appointments>
+    </div>
+    <div class="row-wrapper">
+    <app-offer [offer]="data.treatments"></app-offer>
     <app-visits></app-visits>
-  </div>
+    </div>
   <app-footer></app-footer>
 </ng-container>
