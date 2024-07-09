@@ -8,6 +8,7 @@ import { Charminglook } from './interfaces/charminglook';
 import { CommonModule } from '@angular/common';
 import { OfferComponent } from './components/offer/offer.component';
 import { AppointmentsComponent } from './components/appointments/appointments.component';
+import { VisitsComponent } from './components/visits/visits.component';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,8 @@ import { AppointmentsComponent } from './components/appointments/appointments.co
     TitleComponent,
     CommonModule,
     OfferComponent,
-    AppointmentsComponent
+    AppointmentsComponent,
+    VisitsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -35,10 +37,3 @@ export class AppComponent implements OnInit {
     this.data$.subscribe((v) => console.log(v));
   }
 }
-
-// @NgModule({
-//   imports: [OfferComponent],
-// })
-// class AppModule {}
-
-// Material działa :)))
