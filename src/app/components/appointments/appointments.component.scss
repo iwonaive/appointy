@@ -6,3 +6,8 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.row-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
