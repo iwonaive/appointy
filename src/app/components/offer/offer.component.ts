@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { Charminglook, Treatment } from '../../interfaces/charminglook';
 import { CommonModule } from '@angular/common';
+import { EventEmitter } from 'node:stream';
 
 @Component({
   standalone: true,
@@ -11,8 +12,12 @@ import { CommonModule } from '@angular/common';
 })
 export class OfferComponent {
   @Input() offer!: Treatment[];
+  @Output() emitTreatment = new EventEmitter<Treatment>();
 
-   trackByFn(index: number) {
+  trackByFn(index: number) {
     return index;
-}
+  }
+  handleBook(item: Treatment) {
+    this.emitTreatment.emit(item);
+  }
 }

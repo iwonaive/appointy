@@ -1,7 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Charminglook, Treatment } from '../../interfaces/charminglook';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, FormControl, NonNullableFormBuilder } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+
+interface AppointmentForm {
+  treatment: FormControl<string>;
+  details: FormControl<string>;
+  beautician: FormControl<string>;
+  date: FormControl<string>;
+}
 
 @Component({
   selector: 'app-appointments',
@@ -10,16 +17,20 @@ import { CommonModule } from '@angular/common';
   templateUrl: './appointments.component.html',
   styleUrl: './appointments.component.scss',
 })
-export class AppointmentsComponent {
+export class AppointmentsComponent implements OnInit{
   constructor(private formBuilder: FormBuilder) {}
   @Input() title!: Charminglook;
   @Input() appointments!: Treatment[];
+  @Input() selectedTreatment: Treatment | null = null;
 
-  form!: FormGroup;
+  form!: FormGroup<AppointmentForm>;
 
   ngOnInit(): void {
-    this.form = this.formBuilder.group({
-      control1: [{ value: 'my val', disabled: true }],
-    });
+    this.form = this.formBuilder.group<AppointmentForm>({
+      treatment: new FormControl('', {nonNullable: true}),
+      details: new FormControl('', {nonNullable: true}),
+      beautician: new FormControl('', {nonNullable: true}),
+      date: new FormControl('', {nonNullable: true}),
+    })
   }
 }
