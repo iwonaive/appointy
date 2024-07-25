@@ -1,7 +1,6 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Charminglook, Treatment } from '../../interfaces/charminglook';
 import { CommonModule } from '@angular/common';
-import { EventEmitter } from 'node:stream';
 
 @Component({
   standalone: true,
