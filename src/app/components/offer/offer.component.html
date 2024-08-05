@@ -3,5 +3,6 @@
 <div *ngFor="let item of offer; trackBy: trackByFn" class="pedicure-types">
   <span>{{ item.name }}</span>
   <span>{{ item.price }}</span>
+  <button (click)="handleBook(item)">BOOK</button>
 </div>
 
