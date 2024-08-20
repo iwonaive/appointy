@@ -41,6 +41,14 @@ export class AppointmentsComponent implements OnInit {
     return this.form.controls.treatment;
   }
 
+  get details() {
+    return this.form.controls.details;
+  }
+
+  get beautician() {
+    return this.form.controls.beautician;
+  }
+
   ngOnInit(): void {
     this.initForm();
     this.setFormAsDisabled();
@@ -52,7 +60,10 @@ export class AppointmentsComponent implements OnInit {
         nonNullable: false,
         validators: [Validators.required],
       }),
-      details: new FormControl('', { nonNullable: true }),
+      details: new FormControl('', {
+        nonNullable: true,
+        validators: [Validators.required]
+      }),
       beautician: new FormControl('', {
         nonNullable: true,
         validators: [Validators.required],
@@ -66,10 +77,12 @@ export class AppointmentsComponent implements OnInit {
   }
 
   setFormValues() {
-    console.log(this._selectedTreatment);
-
     this.form.enable();
     this.treatment.setValue(this._selectedTreatment?.name!);
     this.treatment.updateValueAndValidity();
+    this.details.setValue(this._selectedTreatment?.details!)
+    this.details.updateValueAndValidity();
+    this.beautician.reset();
+    this.beautician.updateValueAndValidity();
   }
 }

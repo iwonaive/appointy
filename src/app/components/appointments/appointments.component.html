@@ -1,10 +1,16 @@
 <div class="appointments">
   <form [formGroup]="form">
+    <!-- treatment -->
     <label for="treatment-select">Treatment</label>
     <select [formControlName]="'treatment'" id="treatment-select">
       <option [value]="treatment.value">{{ treatment.value }}</option>
     </select>
-    <!-- select details -->
+    <!-- details -->
+    <label for="details-select">Deatils</label>
+    <select [formControlName]="'details'" id="details">
+      <option [value]="details.value">{{ details.value }}</option>
+    </select>
+    <!-- beautician -->
       <label for="beautician-select">Beautician</label>
       <select [formControlName]="'beautician'" id="beautician-select">
         <ng-container *ngIf="_selectedTreatment">

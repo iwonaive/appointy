@@ -13,6 +13,7 @@ export interface Treatment {
   price: number;
   name: string;
   duration: number;
+  details: string;
   description: string;
   canBook: boolean;
   beauticians: BeauticianInterface[];
