@@ -20,7 +20,7 @@ import { VisitsComponent } from './components/visits/visits.component';
     CommonModule,
     OfferComponent,
     AppointmentsComponent,
-    VisitsComponent
+    VisitsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

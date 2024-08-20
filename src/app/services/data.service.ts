@@ -1,15 +1,68 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
-import { Charminglook } from '../interfaces/charminglook';
+{
+  ('mainData');
+  [
+    {
+      name: 'Charming look',
+      address: 'Słoneczna 11, Warszawa',
+      rating: 4.7,
+    },
+  ];
 
-@Injectable({ providedIn: 'root' })
-export class DataService {
-  url = './assets/getData.json';
-
-  constructor(private http: HttpClient) {}
-
-  getData(): Observable<Charminglook> {
-    return this.http.get<Charminglook>(this.url);
-  }
+  ('treatments');
+  [
+    {
+      description: 'Lorem impsum',
+      price: 50,
+      name: 'Cosmetic pedicure',
+      duration: 60,
+      canBook: true,
+      beauticians: [
+        {
+          name: 'Andrzej Sapkowski',
+        },
+        {
+          name: 'J. K. Rowling',
+        },
+        {
+          name: 'Stephen King',
+        },
+      ],
+    },
+    {
+      description: 'Lorem impsum',
+      price: 45,
+      name: 'Hybrid pedicure',
+      duration: 60,
+      canBook: true,
+      beauticians: [
+        {
+          name: 'Andrzej Sapkowski',
+        },
+        {
+          name: 'J. K. Rowling',
+        },
+        {
+          name: 'Stephen King',
+        },
+      ],
+    },
+    {
+      description: 'Lorem impsum',
+      price: 55,
+      name: 'Biological pedicure',
+      duration: 60,
+      canBook: false,
+      beauticians: [
+        {
+          name: 'Andrzej Sapkowski',
+        },
+        {
+          name: 'J. K. Rowling',
+        },
+        {
+          name: 'Stephen King',
+        },
+      ],
+    },
+  ];
 }

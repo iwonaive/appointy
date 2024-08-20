@@ -1,1 +1,17 @@
-<p class="appointments">appointments will appear here!</p>
+<div class="appointments">
+  <form [formGroup]="form">
+    <label for="treatment-select">Treatment</label>
+    <select [formControlName]="'treatment'" id="treatment-select">
+      <option [value]="treatment.value">{{ treatment.value }}</option>
+    </select>
+    <!-- select details -->
+      <label for="beautician-select">Beautician</label>
+      <select [formControlName]="'beautician'" id="beautician-select">
+        <ng-container *ngIf="_selectedTreatment">
+          <ng-container *ngFor="let beautician of _selectedTreatment!.beauticians">
+            <option [value]="beautician.name">{{ beautician.name }}</option>
+          </ng-container>
+        </ng-container>
+      </select>
+  </form>
+</div>
