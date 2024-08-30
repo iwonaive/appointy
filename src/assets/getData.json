@@ -8,23 +8,59 @@
     {
       "description": "Lorem impsum",
       "price": 50,
-      "name": "Cosmetic pedicure",
+      "name": "Pedicure",
+      "details": "Cosmetic",
       "duration": 60,
-      "canBook": true
+      "canBook": true,
+      "beauticians": [
+        {
+          "name": "Andrzej Sapkowski"
+        },
+        {
+          "name": "J. K. Rowling"
+        },
+        {
+          "name": "Stephen King"
+        }
+      ]
     },
     {
       "description": "Lorem impsum",
       "price": 45,
-      "name": "Hybrid pedicure",
+      "name": "Pedicure",
+      "details": "Hybrid",
       "duration": 60,
-      "canBook": true
+      "canBook": true,
+      "beauticians": [
+        {
+          "name": "Andrzej Sapkowski"
+        },
+        {
+          "name": "J. K. Rowling"
+        },
+        {
+          "name": "Stephen King"
+        }
+      ]
     },
     {
       "description": "Lorem impsum",
       "price": 55,
-      "name": "Biological pedicure",
+      "name": "Pedicure",
+      "details": "Biological",
       "duration": 60,
-      "canBook": false
+      "canBook": false,
+      "beauticians": [
+        {
+          "name": "Andrzej Sapkowski"
+        },
+        {
+          "name": "J. K. Rowling"
+        },
+        {
+          "name": "Stephen King"
+        }
+      ]
     }
   ]
 }
