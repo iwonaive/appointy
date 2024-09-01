@@ -4,6 +4,8 @@
 
 **Please note:** This application is still under development and is not yet complete. Significant work remains to be done before it is ready for production use.
 
+Project is based on Figma: https://www.figma.com/design/FlWwmn5ZmnwJT0cTLPkg3q/rezerwacje_projekt-Dare-IT?node-id=653-368&node-type=CANVAS&t=YVYDTfFzCXoufvBT-0
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
 ## Development server
