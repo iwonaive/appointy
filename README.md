@@ -1,5 +1,9 @@
 # Appointy
 
+**Appointy** is a web application designed for booking appointments at beauty salons and other service-based businesses. It allows users to easily reserve spots for various services through an intuitive interface. 
+
+**Please note:** This application is still under development and is not yet complete. Significant work remains to be done before it is ready for production use.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
 ## Development server
